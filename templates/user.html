@@ -1,0 +1,27 @@
+
+{% load usdfilter %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 style="color: red;">this is userdefine filters</h1>
+        <fieldset>
+        
+        <h2>{{user}}</h2>
+        <h2>{{user|swapping}}</h2>
+        <h2>{{user|counting:'h'}}</h2>
+        <h2>{{user|replace:'H'}}</h2>
+        <h2>{{user}}</h2>
+        <h2>{{user|index}}</h2>
+        <h2>{{user|deler:9}}</h2>
+    </fieldset>
+    </center>
+</body>
+</html>
